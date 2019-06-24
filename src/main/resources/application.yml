@@ -1,0 +1,18 @@
+
+security:
+  oauth2:
+    client:
+      clientId: e7ba0df6b6447fbe8d6e
+      clientSecret: 5976ccbf6565b0a4d6103c3b77e522c604f6546a
+      accessTokenUri: https://github.com/login/oauth/access_token # 请求获取Token
+      userAuthorizationUri: https://github.com/login/oauth/authorize #第一步向GitHub发送授权请求
+      tokenName: oauth_token
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: https://api.github.com/user #请求获取用户API
+logging:
+  level:
+    org.springframework.security: DEBUG
+server:
+  port: 8090
